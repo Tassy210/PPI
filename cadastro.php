@@ -16,6 +16,11 @@
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <style>
+  
+    body{
+    background-color:#baffc2;
+    }
+
    	.nav-wrapper  {
     background-color: #8fd149;
     font-size: 32px;
@@ -30,7 +35,7 @@
     <div class="nav-wrapper">
       <a href="home.php" class="logo-container"><img src="logo.png" height="54px"  margin-left: "80px" margin-top:"3px"></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li><a href="#">Login</a></li>
+      <li><a href="login.php">Login</a></li>
       </ul>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
       <li><a href="#">Cadastrar</a></li>
@@ -38,15 +43,17 @@
     </div>
   </nav>
 
-<div class="container">
- <div class="container">
-    <div class="col s12 m7">
+<br>
+      <div class="container">
+      <div class="container">
       <div class="card">
         <div class="card-image">
         </div>
         <div class="container">
         <div class="card-content">
+        <div class="card-content">
           <center>
+          <h5>Preencha os campos abaixo: </h5>
           <img src="icon_user.png" width="54px">
           </center>
           <form>
@@ -69,24 +76,30 @@
             </label>
           </p>
           <br>
+          <label>Selecione sua foto:</label>
           <div class="file-field input-field">
           <div class="btn">
               <span>Arquivo</span>
-              <input id="foto" name="arquivo" autocomplete="false" type="file">
+              <i class="material-icons">cloud_upload</i>
+              <input id="foto" name="arquivo" autocomplete="false" type="file" >
           </div>
               <div class="file-path-wrapper">
-              <input class="file-path validate" type="text">
           </div>
-          <br>
-          <button type="submit" name="submit" class="btn waves-effect waves-light center-align" >Enviar
-        </form>
         </div>
-      </div>
+          <br><br>
+          <center>
+          <button type="submit" name="submit" class="btn waves-effect waves-default center-align" style="background-color: #8fd149" >Enviar<i class="material-icons">send</i></button>
+          </center>
+        </form>
         </div>
       </div>
     </div>
   </div>
-  </div>
+</div>
+</div>
+</div>
+
+<br>
 
 <footer class="nav-wrapper">
             <div class="row">

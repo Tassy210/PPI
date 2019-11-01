@@ -1,20 +1,12 @@
- <!DOCTYPE html>
-  <html>
-    <head>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <script>
-    	
-    document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.parallax');
-    var instances = M.Parallax.init(elems, options);
-    
-    </script>
-            
 
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -23,10 +15,10 @@
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-   <style>
-
+<style>
+  
     body{
-      background-color:#baffc2;
+    background-color:#baffc2;
     }
 
    	.nav-wrapper  {
@@ -36,16 +28,14 @@
     opacity:0.925;
   }
    </style>
-    </head>
 
+</head>
 <body>
-
-     
 <nav>
     <div class="nav-wrapper">
-      <a href="#" class="logo-container"><img src="logo.png" height="54px"  margin-left: "80px" margin-top:"3px"></a>
+      <a href="home.php" class="logo-container"><img src="logo.png" height="54px"  margin-left: "80px" margin-top:"3px"></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li><a href="login.php">Login</a></li>
+      <li><a href="#">Login</a></li>
       </ul>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
       <li><a href="cadastro.php">Cadastrar</a></li>
@@ -53,23 +43,45 @@
     </div>
   </nav>
 
-<div class="parallax-container">
-  <div class="parallax"><img src="paisagem.png" height="1024px" width="1310px">
+<br>
+      <div class="container">
+      <div class="container">
+      <div class="card">
+        <div class="card-image">
+        </div>
+        <div class="container">
+        <div class="card-content">
+        <div class="card-content">
+          <center>
+          <h5>Preencha os campos abaixo: </h5>  
+          <img src="icon_user.png" width="54px">
+          </center>
+          <form>
+          <label>Nome: 
+          <input type="text" name="nome" placeholder="Digite seu nome">
+          </label>
+          <br>
+          <label>Senha: 
+          <input type="password" name="senha" placeholder="Digite sua senha">
+          </label>
+          <br><br>
+          <center>
+          <button class="btn waves-effect waves-default center-align " style="background-color: #8fd149" type="submit" name="submit" >Logar
+          <i class="material-icons">done</i></button>
+          </center>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<h3>Mas o que é o acervo histórico IFFAR-FW/CAFW?<br><br></h3>
-<h6>É um acervo virtual onde suas lembranças mais queridas são guardadas e arquivadas na internet. Permitindo que você interaja com as postagens ou até mesmo poste algo com a autorização dos administradores. O sistema disponibiliza: pipipi popopo lero lero bla bla bla bla bla escrever algo pra ocupar linha</h6>
+</div>
+</div>
+</div>
+
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
- <footer class="nav-wrapper">
+
+<footer class="nav-wrapper">
             <div class="row">
               <div class="col l6 s12">
                 <h5 class="white-text" style="font-size:16px;">Desenvolvido por: </h5>
@@ -80,6 +92,6 @@
             </div>
           </div>
         </footer>
-</body>
 
+</body>
 </html>
