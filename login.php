@@ -18,16 +18,30 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <style>
   
-    body{
-    background-color:#baffc2;
-    }
-
     .nav-wrapper  {
     background-color: #8fd149;
     font-size: 32px;
     font-weight: bold;
     opacity:0.925;
   }
+
+
+      .page-footer  {
+    background-color: #8fd149;
+    font-weight: bold;
+    opacity:0.925;
+    padding-bottom:10px; 
+  }
+
+    body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  } 
    </style>
 
 </head>
@@ -61,20 +75,20 @@
         </center>
 
         <form method="POST" action="logando.php">
-	       <div class="">
-        	<br><br><br><br>
-            E-mail: 
-         	<br>
-            <input name="email" type="email">
+	       <div class="left-align">
+          <br><br>
+        	   Email: 
+            <input name="email" id="email" type="email">
         	<br><br><br>
             Senha: 
         	<br>
                     <input name="senha" type="password">
 
         <br><br><br>
-
+<center>
 <button class="btn waves-effect waves-default center-align " style="background-color: #8fd149" type="submit" name="submit" >Logar
           <i class="material-icons">done</i></button>
+</center>
 
                                  </form>
 
@@ -87,8 +101,17 @@
 </div>
 </div>
 
-<div class="traco"></div>
-<center>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<footer class="page-footer">
+  <div class="container">
+  <div class="container">
+    Desenvolvido por: Leon Tassinari, Lucas Rabaioli, Valentina Camargo, Gustavo Bottega
+    <br>
+
+  </div>
+  </div>
+</footer>
 
 </body>
 </html>

@@ -24,7 +24,7 @@
       $_SESSION['email'] = $email;
         $_SESSION['usuario'] = $user['id'];
       
-     	header('location:home.php'); 
+     	header('location:pagina.php'); 
      
      
    }else{

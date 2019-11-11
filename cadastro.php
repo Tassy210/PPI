@@ -18,16 +18,30 @@
 
 <style>
   
-    body{
-    background-color:#baffc2;
-    }
-
-   	.nav-wrapper  {
+  .nav-wrapper  {
     background-color: #8fd149;
     font-size: 32px;
     font-weight: bold;
     opacity:0.925;
   }
+
+
+      .page-footer  {
+    background-color: #8fd149;
+    font-weight: bold;
+    opacity:0.925;
+    padding-bottom:10px; 
+  }
+
+    body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  } 
    </style>
 
 </head>
@@ -108,17 +122,14 @@ Senha:
 <div class="traco"></div>
 
 
-<footer class="nav-wrapper">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text" style="font-size:16px;">Desenvolvido por: </h5>
-                <p class="grey-text text-lighten-4" style="font-size:14px;">Leon Tassinari, Lucas Rabaioli, Valentina Camargo, Gustavo Bottega</p>
-              </div>
-            </div>
-          </div>
-            </div>
-          </div>
-        </footer>
+<br><br><br><br><br>
+
+<footer class="page-footer">
+  <div class="container">
+  <div class="container">
+    Desenvolvido por: Leon Tassinari, Lucas Rabaioli, Valentina Camargo, Gustavo Bottega
+    <br>
+
 
 
 </body>

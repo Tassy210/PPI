@@ -14,7 +14,7 @@ $query = mysqli_query($conexao, $sql );
 
 if ($query){
 
-	header("location:paginap.php");
+	header("location:principal.php");
 }
 else{
 	echo "Erro ao inserir registro." . mysqli_error($conexao);

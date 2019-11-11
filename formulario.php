@@ -2,7 +2,7 @@
 
 $server = "localhost";
 $user = "root";
-$senha = "usbw";
+$senha = "";
 $banco = "ppi";
 
 $conexao = mysqli_connect($server, $user, $senha, $banco);
