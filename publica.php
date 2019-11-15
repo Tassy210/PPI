@@ -6,11 +6,10 @@ include "formulario.php";
 if (!isset($_SESSION["email"])) {
 header("location:login.php");
 }
-$id_user = $_SESSION['usuario'];
-$sql = "select * from postagens where id='$id_user';";
+
+$sql = "select * from postagens where id=".$_SESSION['usuario'];
 $query= mysqli_query($conexao, $sql);
-$user = mysqli_num_rows($query);
-echo $user;
+$user = mysqli_fetch_array($query);
 ?>
 
 <!DOCTYPE html>
@@ -31,46 +30,21 @@ echo $user;
 <head>
 <style>
 
-.nav-wrapper  {
-    background-color: #8fd149;
-    font-size: 32px;
-    font-weight: bold;
-    opacity:0.925;
-  }
+body{
+background-color:#baffc2;
+}
 
-      .page-footer  {
-    background-color: #8fd149;
-    font-weight: bold;
-    opacity:0.925;
-    padding-bottom:10px; 
-  }
-
-    body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
-
-  main {
-    flex: 1 0 auto;
-  }
-
+ .nav-wrapper  {
+background-color: #8fd149;
+font-size: 32px;
+font-weight: bold;
+opacity:0.925;
+}
 </style>
 
 </head>
 <body>
 
-<nav>
-    <div class="nav-wrapper">
-      <a href="#" class="logo-container"><img src="logo.png" height="54px"  margin-left: "80px" margin-top:"3px"></a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li><a href="login.php">Login</a></li>
-      </ul>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li><a href="cadastro.php">Cadastrar</a></li>
-      </ul>
-    </div>
-  </nav>
 
 <br><br>
   <div class="container">
@@ -85,7 +59,7 @@ echo $user;
         
       <nav>
 
-  <li><a href="pagina.php">Voltar para a pagina inicial</a></li>
+  <li><a href="home.php">Voltar para a pagina inicial</a></li>
   </ul>
 
 
@@ -98,11 +72,12 @@ echo $user;
     <div class="inp">
 
     <br><br>
+    <form method="POST" action="pub.php" enctype="multipart/form-data">
     Texto
     <br>
     <input type="text" name="texto" value="">
     <br><br><br>
-   <form method="POST" action="salvando.php" enctype="multipart/form-data">
+   
 			<input type="file" name="imagem" id="imagem" onchange="previewImagem()"><br><br>
 			<img style="width: 150px; height: 150px;" ><br><br>
     
@@ -118,7 +93,7 @@ echo $user;
         </div>
           <br><br>
           <center>
-          <button type="submit" name="submit" class="btn waves-effect waves-default center-align" style="background-color: #8fd149" >Enviar<i class="material-icons">send</i></button>
+          <button type="submit" name="submit" class="btn waves-effect waves-default center-align" style="background-color: #8fd149" >publicar<i class="material-icons">send</i></button>
           </center>
         </form>
         </div>
